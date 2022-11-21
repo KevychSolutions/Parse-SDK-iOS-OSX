@@ -1,22 +1,21 @@
+
+import PackageDescription
+
 let package = Package(
     name: "Parse",
-    defaultLocalization: "en",
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Parse",
-            targets: ["Parse"]),
+            targets: ["Parse-iOS"])
     ],
     dependencies: [
-        .package(name: "Bolts", url: "https://github.com/BoltsFramework/Bolts-ObjC", .branch("master"))
+        // no dependencies
     ],
     targets: [
         .target(
-            name: "Parse",
-            dependencies: [.product(name: "Bolts", package: "Bolts")],
-            path: "Parse/Source",
-            exclude: ["Info.plist"],
-            publicHeadersPath: "Public"
+            name: "Parse-iOS",
+            dependencies: [],
+            path: "Parse"
         )
     ]
 )
