@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Parse",
+    name: "Parse_SDK",
     products: [
         .library(
             name: "Parse",
@@ -15,7 +15,7 @@ let package = Package(
         .target(
             name: "Parse-iOS",
             dependencies: [],
-            path: "Parse"
+            path: "Parse/Parse"
         )
     ]
 )
