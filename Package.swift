@@ -8,13 +8,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Parse",
+            name: "Parse-iOS",
             targets: ["Parse-iOS"])
     ],
     // dependencies: [
     //     // no dependencies
     // ],
-    
+
     targets: [
         .target(
             name: "Parse-iOS",
