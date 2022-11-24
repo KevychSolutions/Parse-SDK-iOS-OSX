@@ -11,10 +11,6 @@ let package = Package(
     products: [
         .library(
             name: "Parse-SDK-iOS-OSX",
-		// Динамический или статический продукт
-          	// по дефолту значение nil - SPM сам будет понимать что лучше подходит
-                //  преференция скорей всего будет отдаваться .static
-            type: .dynamic,
             targets: ["Parse-SDK-iOS-OSX""]),
     ],
     dependencies: [
@@ -24,11 +20,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .executableTarget(
-            name: "Parse-SDK-iOS-OSX",
-            dependencies: []),
         .testTarget(
             name: "Parse-SDK-iOS-OSX",
-            dependencies: ["Parse-SDK-iOS-OSX"]),
+            dependencies: ["Parse-iOS, Parse"]),
     ]
 )
