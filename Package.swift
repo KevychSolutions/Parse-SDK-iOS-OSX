@@ -37,8 +37,7 @@ let package = Package(
                 .headerSearchPath("Private"),
             ]
         )
-
-        .target(
+        .binaryTarget(
             name: "Bolt-iOS",
             dependencies: [
                 // .product(name: "BoltsSwift", package: "Bolts-Swift")
