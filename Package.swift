@@ -36,7 +36,7 @@ let package = Package(
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
             ]
-        )
+        ),
         .binaryTarget(
             name: "Bolt-iOS",
             dependencies: [
