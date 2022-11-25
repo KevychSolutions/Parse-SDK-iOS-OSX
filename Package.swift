@@ -22,7 +22,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "Bolts", url: "https://github.com/BoltsFramework/Bolts-Swift", branch: "main")
+        .package(url: "https://github.com/BoltsFramework/Bolts-Swift", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,7 +30,7 @@ let package = Package(
         .target(
             name: "Parse-iOS",
             dependencies: [
-                .product(name: "RswiftDynamic", package: "Bolts")
+                .product(name: "Bolts-iOS", package: "Bolts")
             ],
             path: "Parse/Parse",
             publicHeadersPath: ".",
