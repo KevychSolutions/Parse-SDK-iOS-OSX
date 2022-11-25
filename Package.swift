@@ -32,11 +32,6 @@ let package = Package(
             dependencies: [],
             path: "Parse/Parse",
             publicHeadersPath: ".",
-            dependencies: [
-                // Здесь мы указываем зависимости которые мы хотим использовать в таргете
-                // name(пункт 3), package(пункт 1)
-                // .product(name: "Bolts", package: "R.swift.Library")
-            ],
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
