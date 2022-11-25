@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Parse-SDK-iOS-OSX",
+    defaultLocalization: "en",
      platforms: [
         .macOS(.v10_15),
         .iOS(.v12),
