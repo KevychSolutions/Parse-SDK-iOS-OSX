@@ -22,7 +22,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(path: "../Carthage/Checkouts/Bolts-ObjC")
+        .package(path: "../Carthage/Checkouts/Bolts-ObjC/Bolts")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -32,6 +32,11 @@ let package = Package(
             dependencies: [],
             path: "Parse/Parse",
             publicHeadersPath: ".",
+            dependencies: [
+                // Здесь мы указываем зависимости которые мы хотим использовать в таргете
+                // name(пункт 3), package(пункт 1)
+                // .product(name: "Bolts", package: "R.swift.Library")
+            ],
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
