@@ -28,16 +28,6 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "Parse-iOS",
-            dependencies: ["Bolt-iOS"],
-            path: "Parse/Parse",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath("."),
-                .headerSearchPath("Private"),
-            ]
-        ),
-        .target(
             name: "Bolt-iOS",
             dependencies: [
                 // .product(name: "BoltsSwift", package: "Bolts-Swift")
@@ -45,10 +35,21 @@ let package = Package(
             path: "Carthage/Checkouts/Bolts-ObjC/Bolts/Common",
             publicHeadersPath: ".",
             cSettings: [
+                .headerSearchPath("Internal"),
+            ]
+        ),
+        .target(
+            name: "Parse-iOS",
+            dependencies: ["Bolt-iOS"],
+            path: "Parse/Parse",
+            publicHeadersPath: ".",
+            cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
+                .headerSearchPath("Internal"),
             ]
         )
+        
         // .executableTarget(
         //     name: "Parse-SDK-iOS-OSX",
         //     dependencies: []),
