@@ -32,7 +32,7 @@ let package = Package(
             dependencies: [
                 // .product(name: "BoltsSwift", package: "Bolts-Swift")
             ],
-            path: "Carthage/Checkouts/Bolts-ObjC/Bolts/Common",
+            path: "Carthage/Checkouts/Bolts-ObjC",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("Internal"),
