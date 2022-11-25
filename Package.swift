@@ -7,9 +7,9 @@ let package = Package(
     name: "Parse-SDK-iOS-OSX",
     products: [
         .library(
-            name: "Parse-iOS",
+            name: "Parse",
             targets: ["Parse-iOS"]
-        )
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -18,11 +18,16 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .executableTarget(
-            name: "Parse-SDK-iOS-OSX",
-            dependencies: []),
-        .testTarget(
-            name: "Parse-SDK-iOS-OSXTests",
-            dependencies: ["Parse-SDK-iOS-OSX"]),
+        .target(
+            name: "Parse-iOS",
+            dependencies: [],
+            path: "Parse/Parse"
+        )
+        // .executableTarget(
+        //     name: "Parse-SDK-iOS-OSX",
+        //     dependencies: []),
+        // .testTarget(
+        //     name: "Parse-SDK-iOS-OSXTests",
+        //     dependencies: ["Parse-SDK-iOS-OSX"]),
     ]
 )
