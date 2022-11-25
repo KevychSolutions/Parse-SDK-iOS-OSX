@@ -14,7 +14,8 @@ let package = Package(
     products: [
         .library(
             name: "Parse",
-            targets: ["Parse-iOS"]
+            targets: ["Parse-iOS"],
+            path: "Parse"
         ),
     ],
     dependencies: [
