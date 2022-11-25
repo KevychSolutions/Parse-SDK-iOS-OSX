@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "Parse-SDK-iOS-OSX",
+     platforms: [
+        .macOS(.v10_15),
+        .iOS(.v12),
+        .tvOS(.v12),
+        .watchOS(.v5)
+    ],
     products: [
         .library(
             name: "Parse",
