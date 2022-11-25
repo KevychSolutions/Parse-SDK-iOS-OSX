@@ -30,7 +30,7 @@ let package = Package(
         .target(
             name: "Parse-iOS",
             dependencies: [
-                .product(name: "Bolts-iOS", package: "Bolts-Swift")
+                .product(name: "Bolts-Swift", package: "Bolts-Swift")
             ],
             path: "Parse/Parse",
             publicHeadersPath: ".",
