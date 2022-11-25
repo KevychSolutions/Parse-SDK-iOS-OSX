@@ -18,6 +18,11 @@ let package = Package(
             type: .dynamic,
             targets: ["Parse-iOS"]
         ),
+        .library(
+            name: "Parse-iOS-Dynamic",
+            type: .dynamic,
+            targets: ["Parse-iOS-Dynamic"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -34,7 +39,18 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
-            ])
+            ]
+        ),
+        .target(
+            name: "Parse-iOS-Dynamic",
+            dependencies: [],
+            path: "Parse/Parse",
+            publicHeadersPath: ".",
+            cSettings: [
+                .headerSearchPath("."),
+                .headerSearchPath("Private"),
+            ]
+        )
         // .executableTarget(
         //     name: "Parse-SDK-iOS-OSX",
         //     dependencies: []),
