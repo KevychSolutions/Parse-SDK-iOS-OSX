@@ -29,7 +29,7 @@ let package = Package(
         .target(
             name: "Parse-iOS",
             dependencies: [],
-            path: "Parse",
+            path: "Parse/Parse",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("."),
