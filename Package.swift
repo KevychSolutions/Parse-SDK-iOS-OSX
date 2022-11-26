@@ -53,7 +53,8 @@ let package = Package(
                 .headerSearchPath("Private"),
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
-                .headerSearchPath("Internal/Object/State")
+                .headerSearchPath("Internal/Object/State"),
+                .headerSearchPath("Internal/User/Coder/File")
             ]
         )
         
