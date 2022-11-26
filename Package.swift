@@ -61,13 +61,15 @@ let package = Package(
                 .headerSearchPath("Internal/AuthenticationProviders/Providers/Anonynous"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/State"),
+                .headerSearchPath("Internal/User/CurrentUserController"),
                 .headerSearchPath("Internal/Product"),
                 .headerSearchPath("Internal/LocalDataStore"),
                 .headerSearchPath("Internal/LocalDataStore/OfflineStore"),
                 .headerSearchPath("Internal/Commands"),
                 .headerSearchPath("Internal/Commands/CommandRunner"),
                 .headerSearchPath("Internal/Relation"),
-                .headerSearchPath("Internal/Analitycs/Controller")
+                .headerSearchPath("Internal/Analytics/Controller"),
+                .headerSearchPath("Internal/FieldOperation")
             ]
         )
         
