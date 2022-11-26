@@ -47,7 +47,7 @@ let package = Package(
                 .product(name: "OCMock", package: "ocmock")
             ],
             path: "Parse/Parse",
-            publicHeadersPath: "Parse/Parse/Internal",
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("."),
                 .headerSearchPath("Internal"),
