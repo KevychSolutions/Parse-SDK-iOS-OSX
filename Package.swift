@@ -53,6 +53,7 @@ let package = Package(
                 .headerSearchPath("Private"),
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
+                .headerSearchPath("Parse/Internal"),
                 .headerSearchPath("Internal/Object"),
                 .headerSearchPath("Internal/Object/Controller/OfflineController"),
                 .headerSearchPath("Internal/Object/LocalIdStore"),
