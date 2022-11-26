@@ -59,7 +59,7 @@ let package = Package(
                 .headerSearchPath("Internal/Object/Controller"),
                 .headerSearchPath("Internal/Object/CurrentController"),
                 .headerSearchPath("Internal/User"),
-                .headerSearchPath("Internal/User/AuthenticationProviders/Providers/Anonynous"),
+                .headerSearchPath("Internal/User/AuthenticationProviders/Providers/Anonymous"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/State"),
                 .headerSearchPath("Internal/User/CurrentUserController"),
@@ -73,7 +73,8 @@ let package = Package(
                 .headerSearchPath("Internal/Analytics/Controller"),
                 .headerSearchPath("Internal/FieldOperation"),
                 .headerSearchPath("Internal/Installation/InstallationIdentifierStore"),
-                .headerSearchPath("Internal/Query")
+                .headerSearchPath("Internal/Query"),
+                .headerSearchPath("Internal/Query/State")
             ]
         )
         
