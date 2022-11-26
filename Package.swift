@@ -57,6 +57,7 @@ let package = Package(
                 .headerSearchPath("Internal/Object/State"),
                 .headerSearchPath("Internal/Object/Coder/File"),
                 .headerSearchPath("Internal/Object/Controller"),
+                .headerSearchPath("Internal/User"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/State"),
                 .headerSearchPath("Internal/Product")
