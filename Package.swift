@@ -55,10 +55,12 @@ let package = Package(
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object"),
                 .headerSearchPath("Internal/Object/State"),
+                .headerSearchPath("Internal/Object/Constants"),
                 .headerSearchPath("Internal/Object/Subclassing"),
                 .headerSearchPath("Internal/Object/Utilities"),
                 .headerSearchPath("Internal/Object/Coder/File"),
                 .headerSearchPath("Internal/Object/Controller"),
+                .headerSearchPath("Internal/Object/FilePersistence"),
                 .headerSearchPath("Internal/Object/CurrentController"),
                 .headerSearchPath("Internal/User"),
                 .headerSearchPath("Internal/User/AuthenticationProviders/Providers/Anonymous"),
@@ -73,12 +75,15 @@ let package = Package(
                 .headerSearchPath("Internal/Commands"),
                 .headerSearchPath("Internal/Commands/CommandRunner"),
                 .headerSearchPath("Internal/Commands/CommandRunner/URLSession"),
+                .headerSearchPath("Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate"),
                 .headerSearchPath("Internal/Relation"),
                 .headerSearchPath("Internal/Relation/State"),
+                .headerSearchPath("Internal/Analytics"),
                 .headerSearchPath("Internal/Analytics/Controller"),
                 .headerSearchPath("Internal/FieldOperation"),
                 .headerSearchPath("Internal/Installation/InstallationIdentifierStore"),
                 .headerSearchPath("Internal/Query"),
+                .headerSearchPath("Internal/Query/Controller"),
                 .headerSearchPath("Internal/Query/State"),
                 .headerSearchPath("Internal/KeyValueCache"),
                 .headerSearchPath("Internal/MultiProcessLock"),
@@ -89,9 +94,12 @@ let package = Package(
                 .headerSearchPath("Internal/File"),
                 .headerSearchPath("Internal/File/State"),
                 .headerSearchPath("Internal/File/Controller"),
-                .headerSearchPath("Internal/Persistense"),
+                .headerSearchPath("Internal/Persistence"),
                 .headerSearchPath("Internal/Installation"),
-                .headerSearchPath("Internal/PropertyInfo")
+                .headerSearchPath("Internal/PropertyInfo"),
+                .headerSearchPath("Internal/CloudCode"),
+                .headerSearchPath("Internal/Config"),
+                .headerSearchPath("Internal/Push")
             ]
         )
         
