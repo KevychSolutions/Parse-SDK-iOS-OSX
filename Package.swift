@@ -68,8 +68,10 @@ let package = Package(
                 .headerSearchPath("Internal/Product"),
                 .headerSearchPath("Internal/LocalDataStore"),
                 .headerSearchPath("Internal/LocalDataStore/OfflineStore"),
+                .headerSearchPath("Internal/LocalDataStore/Pin"),
                 .headerSearchPath("Internal/Commands"),
                 .headerSearchPath("Internal/Commands/CommandRunner"),
+                .headerSearchPath("Internal/Commands/URLSession"),
                 .headerSearchPath("Internal/Relation"),
                 .headerSearchPath("Internal/Relation/State"),
                 .headerSearchPath("Internal/Analytics/Controller"),
@@ -81,7 +83,9 @@ let package = Package(
                 .headerSearchPath("Internal/MultiProcessLock"),
                 .headerSearchPath("Internal/ACL"),
                 .headerSearchPath("Internal/Purchase/PaymentTransactionObserver"),
-                .headerSearchPath("Internal/Session/Controller")
+                .headerSearchPath("Internal/Purchase/Controller"),
+                .headerSearchPath("Internal/Session/Controller"),
+                .headerSearchPath("Internal/File")
             ]
         )
         
