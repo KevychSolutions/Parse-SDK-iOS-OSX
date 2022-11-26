@@ -77,7 +77,11 @@ let package = Package(
                 .headerSearchPath("Internal/Installation/InstallationIdentifierStore"),
                 .headerSearchPath("Internal/Query"),
                 .headerSearchPath("Internal/Query/State"),
-                .headerSearchPath("Internal/KeyValueCache")
+                .headerSearchPath("Internal/KeyValueCache"),
+                .headerSearchPath("Internal/MultiProcessLock"),
+                .headerSearchPath("Internal/ACL"),
+                .headerSearchPath("Internal/Purchase/PaymentTransactionObserver"),
+                .headerSearchPath("Internal/Session/Controller")
             ]
         )
         
