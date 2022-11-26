@@ -58,11 +58,16 @@ let package = Package(
                 .headerSearchPath("Internal/Object/Coder/File"),
                 .headerSearchPath("Internal/Object/Controller"),
                 .headerSearchPath("Internal/User"),
+                .headerSearchPath("Internal/AuthenticationProviders/Providers/Anonynous"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/State"),
                 .headerSearchPath("Internal/Product"),
                 .headerSearchPath("Internal/LocalDataStore"),
-                .headerSearchPath("Internal/LocalDataStore/OfflineStore")
+                .headerSearchPath("Internal/LocalDataStore/OfflineStore"),
+                .headerSearchPath("Internal/Commands"),
+                .headerSearchPath("Internal/Commands/CommandRunner"),
+                .headerSearchPath("Internal/Relation"),
+                .headerSearchPath("Internal/Analitycs/Controller")
             ]
         )
         
