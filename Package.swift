@@ -54,6 +54,7 @@ let package = Package(
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object"),
+                .headerSearchPath("Internal/Object/PinningStore"),
                 .headerSearchPath("Internal/Object/OperationSet"),
                 .headerSearchPath("Internal/Object/State"),
                 .headerSearchPath("Internal/Object/Constants"),
@@ -93,6 +94,7 @@ let package = Package(
                 .headerSearchPath("Internal/Purchase/PaymentTransactionObserver"),
                 .headerSearchPath("Internal/Purchase/Controller"),
                 .headerSearchPath("Internal/Session/Controller"),
+                .headerSearchPath("Internal/Session/Utilities"),
                 .headerSearchPath("Internal/File"),
                 .headerSearchPath("Internal/File/State"),
                 .headerSearchPath("Internal/File/Controller"),
@@ -104,6 +106,8 @@ let package = Package(
                 .headerSearchPath("Internal/Config"),
                 .headerSearchPath("Internal/Config/Controller"),
                 .headerSearchPath("Internal/Push"),
+                .headerSearchPath("Internal/Push/Manager"),
+                .headerSearchPath("Internal/Push/ChannelsController"),
                 .headerSearchPath("Internal/ThreadSafety")
             ]
         )
