@@ -52,6 +52,7 @@ let package = Package(
                 .headerSearchPath("."),
                 .headerSearchPath("Private"),
                 .headerSearchPath("Internal"),
+                .headerSearchPath("Parse")
             ]
         )
         
