@@ -54,6 +54,8 @@ let package = Package(
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object"),
+                .headerSearchPath("Internal/Object/EstimatedData"),
+                .headerSearchPath("Internal/Object/BatchController"),
                 .headerSearchPath("Internal/Object/PinningStore"),
                 .headerSearchPath("Internal/Object/OperationSet"),
                 .headerSearchPath("Internal/Object/State"),
@@ -118,7 +120,8 @@ let package = Package(
                 .headerSearchPath("Internal/Push/Controller"),
                 .headerSearchPath("Internal/Push/ChannelsController"),
                 .headerSearchPath("Internal/ThreadSafety"),
-                .headerSearchPath("Internal/HTTPRequest/RequestConstructor")
+                .headerSearchPath("Internal/HTTPRequest/RequestConstructor"),
+                .headerSearchPath("Internal/HTTPRequest")
             ]
         )
         
