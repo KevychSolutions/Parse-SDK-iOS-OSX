@@ -55,12 +55,14 @@ let package = Package(
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object"),
                 .headerSearchPath("Internal/Object/State"),
+                .headerSearchPath("Internal/Object/Utilities"),
                 .headerSearchPath("Internal/Object/Coder/File"),
                 .headerSearchPath("Internal/Object/Controller"),
                 .headerSearchPath("Internal/Object/CurrentController"),
                 .headerSearchPath("Internal/User"),
                 .headerSearchPath("Internal/User/AuthenticationProviders/Providers/Anonymous"),
                 .headerSearchPath("Internal/User/Constants"),
+                .headerSearchPath("Internal/User/Controller"),
                 .headerSearchPath("Internal/User/State"),
                 .headerSearchPath("Internal/User/CurrentUserController"),
                 .headerSearchPath("Internal/Product"),
@@ -74,7 +76,8 @@ let package = Package(
                 .headerSearchPath("Internal/FieldOperation"),
                 .headerSearchPath("Internal/Installation/InstallationIdentifierStore"),
                 .headerSearchPath("Internal/Query"),
-                .headerSearchPath("Internal/Query/State")
+                .headerSearchPath("Internal/Query/State"),
+                .headerSearchPath("Internal/KeyValueCache")
             ]
         )
         
