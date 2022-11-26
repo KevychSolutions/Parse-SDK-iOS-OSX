@@ -60,7 +60,9 @@ let package = Package(
                 .headerSearchPath("Internal/User"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/State"),
-                .headerSearchPath("Internal/Product")
+                .headerSearchPath("Internal/Product"),
+                .headerSearchPath("Internal/LocalDataStore"),
+                .headerSearchPath("Internal/LocalDataStore/OfflineStore")
             ]
         )
         
