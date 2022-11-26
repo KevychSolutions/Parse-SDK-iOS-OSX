@@ -43,7 +43,7 @@ let package = Package(
         .target(
             name: "Parse-iOS",
             dependencies: [
-                .product(name: "Bolts-ObjC", package: "Bolts-ObjC")
+                .product(name: "Bolts-iOS", package: "Bolts-iOS")
             ],
             path: "Parse/Parse",
             publicHeadersPath: ".",
