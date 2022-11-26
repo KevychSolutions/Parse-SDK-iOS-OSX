@@ -54,7 +54,8 @@ let package = Package(
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object/State"),
-                .headerSearchPath("Internal/User/Coder/File")
+                .headerSearchPath("Internal/Object/Coder/File"),
+                .headerSearchPath("Internal/User/Constants")
             ]
         )
         
