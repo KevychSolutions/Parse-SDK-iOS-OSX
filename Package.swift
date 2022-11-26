@@ -78,6 +78,7 @@ let package = Package(
                 .headerSearchPath("Internal/LocalDataStore/Pin"),
                 .headerSearchPath("Internal/Commands"),
                 .headerSearchPath("Internal/Commands/CommandRunner"),
+                .headerSearchPath("Internal/Commands/CommandRunner/URLRequestConstructor"),
                 .headerSearchPath("Internal/Commands/CommandRunner/URLSession"),
                 .headerSearchPath("Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate"),
                 .headerSearchPath("Internal/Relation"),
@@ -107,6 +108,7 @@ let package = Package(
                 .headerSearchPath("Internal/Persistence"),
                 .headerSearchPath("Internal/Persistence/Group"),
                 .headerSearchPath("Internal/Installation"),
+                .headerSearchPath("Internal/Installation/Controller"),
                 .headerSearchPath("Internal/PropertyInfo"),
                 .headerSearchPath("Internal/CloudCode"),
                 .headerSearchPath("Internal/Config"),
@@ -115,7 +117,8 @@ let package = Package(
                 .headerSearchPath("Internal/Push/Manager"),
                 .headerSearchPath("Internal/Push/Controller"),
                 .headerSearchPath("Internal/Push/ChannelsController"),
-                .headerSearchPath("Internal/ThreadSafety")
+                .headerSearchPath("Internal/ThreadSafety"),
+                .headerSearchPath("Internal/HTTPRequest/RequestConstructor")
             ]
         )
         
