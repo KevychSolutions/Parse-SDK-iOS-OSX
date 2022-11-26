@@ -54,6 +54,7 @@ let package = Package(
                 .headerSearchPath("Internal"),
                 .headerSearchPath("Parse"),
                 .headerSearchPath("Internal/Object"),
+                .headerSearchPath("Internal/Object/OperationSet"),
                 .headerSearchPath("Internal/Object/State"),
                 .headerSearchPath("Internal/Object/Constants"),
                 .headerSearchPath("Internal/Object/Subclassing"),
@@ -85,6 +86,7 @@ let package = Package(
                 .headerSearchPath("Internal/Query"),
                 .headerSearchPath("Internal/Query/Controller"),
                 .headerSearchPath("Internal/Query/State"),
+                .headerSearchPath("Internal/Query/Utilities"),
                 .headerSearchPath("Internal/KeyValueCache"),
                 .headerSearchPath("Internal/MultiProcessLock"),
                 .headerSearchPath("Internal/ACL"),
@@ -95,11 +97,14 @@ let package = Package(
                 .headerSearchPath("Internal/File/State"),
                 .headerSearchPath("Internal/File/Controller"),
                 .headerSearchPath("Internal/Persistence"),
+                .headerSearchPath("Internal/Persistence/Group"),
                 .headerSearchPath("Internal/Installation"),
                 .headerSearchPath("Internal/PropertyInfo"),
                 .headerSearchPath("Internal/CloudCode"),
                 .headerSearchPath("Internal/Config"),
-                .headerSearchPath("Internal/Push")
+                .headerSearchPath("Internal/Config/Controller"),
+                .headerSearchPath("Internal/Push"),
+                .headerSearchPath("Internal/ThreadSafety")
             ]
         )
         
