@@ -66,6 +66,7 @@ let package = Package(
                 .headerSearchPath("Internal/Object/CurrentController"),
                 .headerSearchPath("Internal/User"),
                 .headerSearchPath("Internal/User/AuthenticationProviders/Providers/Anonymous"),
+                .headerSearchPath("Internal/User/AuthenticationProviders/Controller"),
                 .headerSearchPath("Internal/User/Constants"),
                 .headerSearchPath("Internal/User/Controller"),
                 .headerSearchPath("Internal/User/State"),
@@ -84,6 +85,7 @@ let package = Package(
                 .headerSearchPath("Internal/Analytics/Controller"),
                 .headerSearchPath("Internal/FieldOperation"),
                 .headerSearchPath("Internal/Installation/InstallationIdentifierStore"),
+                .headerSearchPath("Internal/Installation/CurrentInstallationController"),
                 .headerSearchPath("Internal/Query"),
                 .headerSearchPath("Internal/Query/Controller"),
                 .headerSearchPath("Internal/Query/State"),
@@ -91,6 +93,7 @@ let package = Package(
                 .headerSearchPath("Internal/KeyValueCache"),
                 .headerSearchPath("Internal/MultiProcessLock"),
                 .headerSearchPath("Internal/ACL"),
+                .headerSearchPath("Internal/ACL/State"),
                 .headerSearchPath("Internal/Purchase/PaymentTransactionObserver"),
                 .headerSearchPath("Internal/Purchase/Controller"),
                 .headerSearchPath("Internal/Session/Controller"),
@@ -107,6 +110,7 @@ let package = Package(
                 .headerSearchPath("Internal/Config/Controller"),
                 .headerSearchPath("Internal/Push"),
                 .headerSearchPath("Internal/Push/Manager"),
+                .headerSearchPath("Internal/Push/Controller"),
                 .headerSearchPath("Internal/Push/ChannelsController"),
                 .headerSearchPath("Internal/ThreadSafety")
             ]
