@@ -87,7 +87,11 @@ let package = Package(
                 .headerSearchPath("Internal/Purchase/Controller"),
                 .headerSearchPath("Internal/Session/Controller"),
                 .headerSearchPath("Internal/File"),
-                .headerSearchPath("Internal/File/State")
+                .headerSearchPath("Internal/File/State"),
+                .headerSearchPath("Internal/File/Controller"),
+                .headerSearchPath("Internal/Persistense"),
+                .headerSearchPath("Internal/Installation"),
+                .headerSearchPath("Internal/PropertyInfo")
             ]
         )
         
