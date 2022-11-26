@@ -42,7 +42,7 @@ let package = Package(
         // ),
         .target(
             name: "Parse-iOS",
-            dependencies: ["Bolts"],
+            dependencies: ["Bolts-ObjC"],
             path: "Parse/Parse",
             publicHeadersPath: ".",
             cSettings: [
