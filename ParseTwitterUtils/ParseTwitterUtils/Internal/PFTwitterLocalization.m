@@ -2,7 +2,7 @@
 //  PFTwitterLocalization.m
 //  
 //
-//  Created by Ulaş Sancak on 20.11.2022.
+//  Created by Volodymyr Nazarkevych on 29.11.2022.
 //
 
 #import "PFTwitterLocalization.h"
