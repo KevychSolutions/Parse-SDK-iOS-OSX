@@ -17,7 +17,7 @@ let package = Package(
         .library(name: "ParseUI", targets: ["ParseUI"])
     ],
     dependencies: [
-        .package(url: "https://github.com/rocxteady/Bolts-ObjC", revision: "0419586ce3df0a004fbf94533198132de9c9aa0a"),
+        .package(url: "https://github.com/vazarkevych/Bolts-ObjC.git", branch: "spm"),
         .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "15.1.0")
     ],
     targets: [
