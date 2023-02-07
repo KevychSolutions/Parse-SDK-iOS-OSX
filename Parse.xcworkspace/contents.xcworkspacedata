@@ -19,6 +19,9 @@
    <FileRef
       location = "group:ParseUI/ParseUI.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ParseLiveQuery-iOS-OSX-main/Sources/ParseLiveQuery.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "Vendor">
