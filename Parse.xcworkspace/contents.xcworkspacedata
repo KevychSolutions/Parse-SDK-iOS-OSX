@@ -20,7 +20,7 @@
       location = "group:ParseUI/ParseUI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ParseLiveQuery-iOS-OSX-main/Sources/ParseLiveQuery.xcodeproj">
+      location = "group:ParseLiveQuery-iOS-OSX-main/ParseLiveQuery.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
