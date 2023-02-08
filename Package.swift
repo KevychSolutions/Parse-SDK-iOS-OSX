@@ -78,12 +78,12 @@ let package = Package(
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
- 	.target(name: "ParseUI",
+ 	.target(name: "ParseLiveQuery",
                dependencies: [
-                "ParseFacebookUtilsiOS",
-                "ParseTwitterUtils"
+                "Srartscream",
+                "BoltsSwift"
                ],
-                path: "ParseUI/ParseUI",
+                path: "ParseLiveQuery/ParseLiveQuery",
                 exclude: ["Resources/Info-iOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",

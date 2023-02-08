@@ -19,8 +19,8 @@
 		4A819D9E1D93786A009C0F61 /* ObjCCompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D58B51C8E33D9009F8D6C /* ObjCCompat.swift */; };
 		708836762561F503005B32F0 /* ParseLiveQuery_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 708836742561F503005B32F0 /* ParseLiveQuery_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		708836982561F55B005B32F0 /* ParseLiveQuery_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 708836962561F55B005B32F0 /* ParseLiveQuery_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95D3BC9029913B1300360C23 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D80FDF1E26C04800AC7A2D /* AudioToolbox.framework */; };
 		95D3BC9129913B2400360C23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D80FDD1E26C03E00AC7A2D /* SystemConfiguration.framework */; };
+		95D3BD2029928DB500360C23 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D80FDF1E26C04800AC7A2D /* AudioToolbox.framework */; };
 		F534A5B21BDAFE0200CBD11A /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534A5B11BDAFE0200CBD11A /* Subscription.swift */; };
 		F534A5B41BDB09CE00CBD11A /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534A5B31BDB09CE00CBD11A /* Operation.swift */; };
 		F54D58B81C8E3446009F8D6C /* ClientPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D58B71C8E3446009F8D6C /* ClientPrivate.swift */; };
@@ -37,6 +37,163 @@
 		F5D965381BD99DA200C3AAFC /* QueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5591BA91BD97BB70072F966 /* QueryEncoder.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		95C22F3129928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C3821C19CCA89E0066284A;
+			remoteInfo = "Parse-iOS";
+		};
+		95C22F3329928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C5845D1C3B0A98000063C6;
+			remoteInfo = "Parse-iOS-Dynamic";
+		};
+		95C22F3529928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 816F449B1A8E8933009CDB32;
+			remoteInfo = "ParseUnitTests-iOS";
+		};
+		95C22F3729928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97010FAC1630B18F00AB761E;
+			remoteInfo = "Parse-macOS";
+		};
+		95C22F3929928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C09F861AF97A490043B49C;
+			remoteInfo = "ParseUnitTests-macOS";
+		};
+		95C22F3B29928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 815F24151BD04D150054659F;
+			remoteInfo = "Parse-tvOS";
+		};
+		95C22F3D29928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C585BF1C3B0AA1000063C6;
+			remoteInfo = "Parse-tvOS-Dynamic";
+		};
+		95C22F3F29928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 810156691BB3832700D7C7BD;
+			remoteInfo = "Parse-watchOS";
+		};
+		95C22F4129928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C5870F1C3B0AA9000063C6;
+			remoteInfo = "Parse-watchOS-Dynamic";
+		};
+		95C22F4329928FF70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE33A0B1F5451AD0088DCA0;
+			remoteInfo = "ParseUnitTests-iOS-host";
+		};
+		95C22F4529928FFE0018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C3821B19CCA89E0066284A;
+			remoteInfo = "Parse-iOS";
+		};
+		95C22F51299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87FEF3661A9085FA00C60678;
+			remoteInfo = "BoltsSwift-iOS";
+		};
+		95C22F53299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87FEF3711A9085FA00C60678;
+			remoteInfo = "BoltsSwiftTests-iOS";
+		};
+		95C22F55299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81CC14EC1A9BE0A100B28F86;
+			remoteInfo = "BoltsSwift-macOS";
+		};
+		95C22F57299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81CC14F61A9BE0A100B28F86;
+			remoteInfo = "BoltsSwiftTests-macOS";
+		};
+		95C22F59299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065894FF1C9A93B7000FDDA6;
+			remoteInfo = "BoltsSwift-tvOS";
+		};
+		95C22F5B299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0658951B1C9A947B000FDDA6;
+			remoteInfo = "BoltsSwiftTests-tvOS";
+		};
+		95C22F5D299290390018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 065894E71C9A933B000FDDA6;
+			remoteInfo = "BoltsSwift-watchOS";
+		};
+		95C22F64299290410018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F5F299290410018609D /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33CCF0921F5DDC030099B092;
+			remoteInfo = Starscream;
+		};
+		95C22F66299290410018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F5F299290410018609D /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 335FA2021F5DF71D00F6D2EC;
+			remoteInfo = "Starscream Tests";
+		};
+		95C22F68299290C70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F5F299290410018609D /* Starscream.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CCF0841F5DDC030099B092;
+			remoteInfo = Starscream;
+		};
+		95C22F6A299290C70018609D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 87FEF3651A9085FA00C60678;
+			remoteInfo = "BoltsSwift-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		708836A22561F58F005B32F0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,16 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		708836A52561F5A6005B32F0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9575FF08299134DF0057B4CE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -96,7 +243,11 @@
 		708836972561F55B005B32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95AEEB3C2991377600165C0D /* BoltsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BoltsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AEEB3F2991378E00165C0D /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C22F2429928FF70018609D /* Parse.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Parse.xcodeproj; path = ../../Parse/Parse.xcodeproj; sourceTree = "<group>"; };
+		95C22F47299290390018609D /* BoltsSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoltsSwift.xcodeproj; path = "../../Carthage/Checkouts/Bolts-Swift/BoltsSwift.xcodeproj"; sourceTree = "<group>"; };
+		95C22F5F299290410018609D /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../../Carthage/Checkouts/Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
 		95D3BC8E29913B0100360C23 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		95D3BD1929928BF400360C23 /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5256FD31BD71F9A0052FB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F534A5B11BDAFE0200CBD11A /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		F534A5B31BDB09CE00CBD11A /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
@@ -143,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D3BC9129913B2400360C23 /* SystemConfiguration.framework in Frameworks */,
-				95D3BC9029913B1300360C23 /* AudioToolbox.framework in Frameworks */,
+				95D3BD2029928DB500360C23 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +304,10 @@
 		0BD13CAB7945A6C1A2A7B613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95C22F2429928FF70018609D /* Parse.xcodeproj */,
+				95C22F47299290390018609D /* BoltsSwift.xcodeproj */,
+				95C22F5F299290410018609D /* Starscream.xcodeproj */,
+				95D3BD1929928BF400360C23 /* Parse.framework */,
 				95D3BC8E29913B0100360C23 /* Network.framework */,
 				95AEEB3F2991378E00165C0D /* Starscream.framework */,
 				95AEEB3C2991377600165C0D /* BoltsSwift.framework */,
@@ -190,6 +345,46 @@
 				F5256FD31BD71F9A0052FB8A /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		95C22F2529928FF70018609D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C22F3229928FF70018609D /* Parse.framework */,
+				95C22F3429928FF70018609D /* Parse.framework */,
+				95C22F3629928FF70018609D /* ParseUnitTests-iOS.xctest */,
+				95C22F3829928FF70018609D /* Parse.framework */,
+				95C22F3A29928FF70018609D /* ParseUnitTests-macOS.xctest */,
+				95C22F3C29928FF70018609D /* Parse.framework */,
+				95C22F3E29928FF70018609D /* Parse.framework */,
+				95C22F4029928FF70018609D /* Parse.framework */,
+				95C22F4229928FF70018609D /* Parse.framework */,
+				95C22F4429928FF70018609D /* ParseUnitTests-iOS-host.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C22F48299290390018609D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C22F52299290390018609D /* BoltsSwift.framework */,
+				95C22F54299290390018609D /* BoltsSwiftTests.xctest */,
+				95C22F56299290390018609D /* BoltsSwift.framework */,
+				95C22F58299290390018609D /* BoltsSwiftTests.xctest */,
+				95C22F5A299290390018609D /* BoltsSwift.framework */,
+				95C22F5C299290390018609D /* BoltsSwiftTests.xctest */,
+				95C22F5E299290390018609D /* BoltsSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C22F60299290410018609D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C22F65299290410018609D /* Starscream.framework */,
+				95C22F67299290410018609D /* Starscream Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F5256FC41BD71F9A0052FB8A = {
@@ -342,11 +537,13 @@
 				F5A9BFC01BE0248D00E78326 /* Frameworks */,
 				F5A9BFC31BE0248D00E78326 /* Headers */,
 				F5A9BFC51BE0248D00E78326 /* Resources */,
-				9575FF08299134DF0057B4CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				95C22F69299290C70018609D /* PBXTargetDependency */,
+				95C22F6B299290C70018609D /* PBXTargetDependency */,
+				95C22F4629928FFE0018609D /* PBXTargetDependency */,
 			);
 			name = "ParseLiveQuery-iOS";
 			productName = ParseLiveQuery;
@@ -390,6 +587,20 @@
 			mainGroup = F5256FC41BD71F9A0052FB8A;
 			productRefGroup = F5256FCF1BD71F9A0052FB8A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 95C22F48299290390018609D /* Products */;
+					ProjectRef = 95C22F47299290390018609D /* BoltsSwift.xcodeproj */;
+				},
+				{
+					ProductGroup = 95C22F2529928FF70018609D /* Products */;
+					ProjectRef = 95C22F2429928FF70018609D /* Parse.xcodeproj */;
+				},
+				{
+					ProductGroup = 95C22F60299290410018609D /* Products */;
+					ProjectRef = 95C22F5F299290410018609D /* Starscream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F5A9BFB61BE0248D00E78326 /* ParseLiveQuery-iOS */,
@@ -399,6 +610,142 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		95C22F3229928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3129928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3429928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3329928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3629928FF70018609D /* ParseUnitTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParseUnitTests-iOS.xctest";
+			remoteRef = 95C22F3529928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3829928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3729928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3A29928FF70018609D /* ParseUnitTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParseUnitTests-macOS.xctest";
+			remoteRef = 95C22F3929928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3C29928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3B29928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F3E29928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3D29928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F4029928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F3F29928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F4229928FF70018609D /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 95C22F4129928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F4429928FF70018609D /* ParseUnitTests-iOS-host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ParseUnitTests-iOS-host.app";
+			remoteRef = 95C22F4329928FF70018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F52299290390018609D /* BoltsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoltsSwift.framework;
+			remoteRef = 95C22F51299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F54299290390018609D /* BoltsSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoltsSwiftTests.xctest;
+			remoteRef = 95C22F53299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F56299290390018609D /* BoltsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoltsSwift.framework;
+			remoteRef = 95C22F55299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F58299290390018609D /* BoltsSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoltsSwiftTests.xctest;
+			remoteRef = 95C22F57299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F5A299290390018609D /* BoltsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoltsSwift.framework;
+			remoteRef = 95C22F59299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F5C299290390018609D /* BoltsSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoltsSwiftTests.xctest;
+			remoteRef = 95C22F5B299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F5E299290390018609D /* BoltsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoltsSwift.framework;
+			remoteRef = 95C22F5D299290390018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F65299290410018609D /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 95C22F64299290410018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95C22F67299290410018609D /* Starscream Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream Tests.xctest";
+			remoteRef = 95C22F66299290410018609D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		708836702561F502005B32F0 /* Resources */ = {
@@ -479,6 +826,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C22F4629928FFE0018609D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-iOS";
+			targetProxy = 95C22F4529928FFE0018609D /* PBXContainerItemProxy */;
+		};
+		95C22F69299290C70018609D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			targetProxy = 95C22F68299290C70018609D /* PBXContainerItemProxy */;
+		};
+		95C22F6B299290C70018609D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BoltsSwift-iOS";
+			targetProxy = 95C22F6A299290C70018609D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		708836772561F503005B32F0 /* Debug */ = {
