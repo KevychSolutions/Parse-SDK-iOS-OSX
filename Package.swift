@@ -86,7 +86,7 @@ let package = Package(
                 "Srartscream",
                 "BoltsSwift"
                ],
-                path: "ParseLiveQuery/Sources/ParseLiveQuery",
+                path: "ParseLiveQuery/ParseLiveQuery",
                 exclude: ["Resources/Info-iOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
