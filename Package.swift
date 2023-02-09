@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "ParseFacebookUtilsTvOS", targets: ["ParseFacebookUtilsTvOS"]),
         .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"]),
         .library(name: "ParseUI", targets: ["ParseUI"]),
-        .library(name: "ParseKiveQuary", targets: ["ParseKiveQuary"])
+        .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
         .package(url: "https://github.com/parse-community/Bolts-ObjC.git", from: "1.10.0"),
@@ -83,6 +83,8 @@ let package = Package(
                 cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
+                .product(name: "Bolts", package: "Bolts-Swift"),
+
                 "Srartscream",
                 "BoltsSwift"
                ],
