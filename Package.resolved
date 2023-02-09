@@ -10,6 +10,24 @@
           "version": "1.10.0"
         }
       },
+	{
+        "package": "Bolts",
+        "repositoryURL": "https://github.com/BoltsFramework/Bolts-Swift.gitSwift",
+        "state": {
+          "branch": null,
+          "revision": "1eee96ad3bcfc8964c0a5815ce94f491eb6ac8c2",
+          "version": "1.5.0"
+        }
+      },
+	{
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "1eee96ad3bcfc8964c0a5815ce94f491eb6ac8c2",
+          "version": "4.0.4"
+        }
+      },
       {
         "package": "Facebook",
         "repositoryURL": "https://github.com/facebook/facebook-ios-sdk",
