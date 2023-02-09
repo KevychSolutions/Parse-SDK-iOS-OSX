@@ -83,8 +83,7 @@ let package = Package(
                 cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
-                "Srartscream",
-                "BoltsSwift"
+                .product(name: "BoltsSwift", package: "Bolts-Swift"),
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
                 exclude: ["Resources/Info-iOS.plist"],
