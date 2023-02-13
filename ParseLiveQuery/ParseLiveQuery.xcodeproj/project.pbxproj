@@ -46,6 +46,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9591FD37299A440000D4C236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95E916532995216A00EFDB34 /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 97010FAB1630B18F00AB761E;
+			remoteInfo = "Parse-macOS";
+		};
+		9591FD4B299A440900D4C236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95E916532995216A00EFDB34 /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 810155051BB3832700D7C7BD;
+			remoteInfo = "Parse-watchOS";
+		};
+		9591FD4D299A441100D4C236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95E916532995216A00EFDB34 /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 815F22AF1BD04D150054659F;
+			remoteInfo = "Parse-tvOS";
+		};
 		95E916602995216A00EFDB34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95E916532995216A00EFDB34 /* Parse.xcodeproj */;
@@ -493,6 +514,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9591FD4C299A440900D4C236 /* PBXTargetDependency */,
 			);
 			name = "ParseLiveQuery-watchOS";
 			productName = "ParseLiveQuery-watchOS";
@@ -512,6 +534,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9591FD4E299A441100D4C236 /* PBXTargetDependency */,
 			);
 			name = "ParseLiveQuery-tvOS";
 			productName = "ParseLiveQuery-tvOS";
@@ -531,6 +554,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9591FD38299A440000D4C236 /* PBXTargetDependency */,
 			);
 			name = "ParseLiveQuery-OSX";
 			productName = ParseLiveQuery;
@@ -835,6 +859,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9591FD38299A440000D4C236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-macOS";
+			targetProxy = 9591FD37299A440000D4C236 /* PBXContainerItemProxy */;
+		};
+		9591FD4C299A440900D4C236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-watchOS";
+			targetProxy = 9591FD4B299A440900D4C236 /* PBXContainerItemProxy */;
+		};
+		9591FD4E299A441100D4C236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-tvOS";
+			targetProxy = 9591FD4D299A441100D4C236 /* PBXContainerItemProxy */;
+		};
 		95E916752995217600EFDB34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Parse-iOS";
