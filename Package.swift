@@ -10,7 +10,7 @@ let package = Package(
                 .tvOS(.v12),
                 .watchOS(.v2)],
     products: [
-        .library(name: "ParseObjC", targets: ["ParseCore"]),
+        .library(name: "ParseObjC", targets: ["ParseObjC"]),
         .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
@@ -21,7 +21,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ParseCore",
+            name: "ParseObjC",
             dependencies: [.product(name: "Bolts", package: "Bolts-ObjC")],
             path: "Parse/Parse",
             exclude: ["Resources/Parse-tvOS.Info.plist", "Resources/Parse-iOS.Info.plist", "Resources/Parse-OSX.Info.plist", "Resources/Parse-watchOS.Info.plist"],
@@ -31,7 +31,6 @@ let package = Package(
  	.target(name: "ParseLiveQuery",
                dependencies: [
 		"ParseObjC",
-		"Starscream",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
                 .product(name: "Bolts", package: "Bolts-ObjC")
 
