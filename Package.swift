@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "ParseObjCTest",
+    name: "ParseObjC",
     defaultLocalization: "en",
     platforms: [.iOS(.v12),
                 .macOS(.v10_10),
                 .tvOS(.v12),
                 .watchOS(.v2)],
     products: [
-        .library(name: "ParseObjCTest", targets: ["ParseObjCTest"]),
+        .library(name: "ParseObjC", targets: ["ParseCore"]),
         .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
@@ -21,7 +21,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ParseObjCTest",
+            name: "ParseCore",
             dependencies: [.product(name: "Bolts", package: "Bolts-ObjC")],
             path: "Parse/Parse",
             exclude: ["Resources/Parse-tvOS.Info.plist", "Resources/Parse-iOS.Info.plist", "Resources/Parse-OSX.Info.plist", "Resources/Parse-watchOS.Info.plist"],
@@ -30,6 +30,7 @@ let package = Package(
             cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
+		"Starscream",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
                 .product(name: "Bolts", package: "Bolts-ObjC")
 
