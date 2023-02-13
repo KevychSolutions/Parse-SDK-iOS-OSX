@@ -1174,7 +1174,6 @@
 		};
 		F5256FE01BD71F9A0052FB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9591FEA7299A4EAF00D4C236 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1213,6 +1212,7 @@
 		};
 		F5256FE11BD71F9A0052FB8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9591FEA8299A4EAF00D4C236 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1330,6 +1330,7 @@
 		};
 		F5A9BFC91BE0248D00E78326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9591FE99299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
