@@ -10,8 +10,8 @@ let package = Package(
                 .tvOS(.v12),
                 .watchOS(.v2)],
     products: [
-        .library(name: "ParseObjC", targets: ["ParseCore"]),
-        .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
+        .library(name: "ParseObjC", targets: ["ParseCore", "ParseLiveQuery"]),
+        .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery", "ParseCore"])
     ],
     dependencies: [
         .package(url: "https://github.com/parse-community/Bolts-ObjC.git", from: "1.10.0"),
