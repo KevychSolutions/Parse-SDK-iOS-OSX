@@ -17,6 +17,8 @@ let package = Package(
         .package(url: "https://github.com/parse-community/Bolts-ObjC.git", from: "1.10.0"),
         .package(url: "https://github.com/BoltsFramework/Bolts-Swift.git", from: "1.5.0"),
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.1.1"),
+        .package(url: "https://github.com/parse-community/Parse-SDK-iOS-OSX.git", from: "2.0.2"),
+
         .package(url: "https://github.com/facebook/facebook-ios-sdk.git", from: "15.1.0")
     ],
     targets: [
@@ -30,7 +32,7 @@ let package = Package(
             cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
-                .product(name: "ParseObjC", package: "ParseObjC")
+                .product(name: "ParseObjC", package: "Parse-SDK-iOS-OSX")
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
 		"Starscream",
                 .product(name: "Bolts", package: "Bolts-ObjC"),
