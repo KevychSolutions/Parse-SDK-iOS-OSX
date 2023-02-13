@@ -87,7 +87,7 @@ let package = Package(
 		"Starscream"
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
-                exclude: ["Resources/Info.plist"],
+                exclude: ["Resources/Info.plist", "ParseLiveQuery-watchOS/Info.plist", "ParseLiveQuery-tvOS/Info.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
