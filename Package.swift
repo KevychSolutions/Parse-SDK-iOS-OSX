@@ -84,7 +84,8 @@ let package = Package(
  	.target(name: "ParseLiveQuery",
                dependencies: [
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
-		"Starscream"
+		"Starscream",
+		"ParseCore"
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
                 exclude: ["Resources/Info.plist", "ParseLiveQuery-watchOS/Info.plist", "ParseLiveQuery-tvOS/Info.plist"],
