@@ -11,7 +11,7 @@ let package = Package(
                 .watchOS(.v2)],
     products: [
         .library(name: "ParseObjC", targets: ["ParseCore"]),
-        .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery", "ParseCore"])
+        .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
         .package(url: "https://github.com/parse-community/Bolts-ObjC.git", from: "1.10.0"),
@@ -35,6 +35,7 @@ let package = Package(
                 .product(name: "Bolts", package: "Bolts-ObjC")
 
                ],
+		exclude: ["Resources/Info.plist"],
                 path: "ParseLiveQuery/ParseLiveQuery")
     ]
 )
