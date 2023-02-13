@@ -85,8 +85,10 @@ let package = Package(
                dependencies: [
 		"ParseCore",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
-		"Starscream"
+		"Starscream",
+                .product(name: "Bolts", package: "Bolts-ObjC"),
+
                ],
-                path: "ParseLiveQuery/ParseLiveQuery"
+                path: "ParseLiveQuery/ParseLiveQuery")
     ]
 )
