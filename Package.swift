@@ -10,11 +10,6 @@ let package = Package(
                 .tvOS(.v12),
                 .watchOS(.v2)],
     products: [
-        .library(name: "ParseObjC", targets: ["ParseCore"]),
-        .library(name: "ParseFacebookUtilsiOS", targets: ["ParseFacebookUtilsiOS"]),
-        .library(name: "ParseFacebookUtilsTvOS", targets: ["ParseFacebookUtilsTvOS"]),
-        .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"]),
-        .library(name: "ParseUI", targets: ["ParseUI"]),
         .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
