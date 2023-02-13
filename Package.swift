@@ -32,7 +32,7 @@ let package = Package(
             cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
-                .product(name: "ParseCore", package: "ParseObjC"),
+		"ParseCore",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
 		"Starscream",
                 .product(name: "Bolts", package: "Bolts-ObjC")
