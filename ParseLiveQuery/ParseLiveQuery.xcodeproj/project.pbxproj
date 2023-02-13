@@ -15,6 +15,19 @@
 		4A819D9E1D93786A009C0F61 /* ObjCCompat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D58B51C8E33D9009F8D6C /* ObjCCompat.swift */; };
 		708836762561F503005B32F0 /* ParseLiveQuery_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 708836742561F503005B32F0 /* ParseLiveQuery_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		708836982561F55B005B32F0 /* ParseLiveQuery_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 708836962561F55B005B32F0 /* ParseLiveQuery_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9591FEBA299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FE99299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig */; };
+		9591FEBB299A4EAF00D4C236 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FE9B299A4EAF00D4C236 /* Common.xcconfig */; };
+		9591FEBC299A4EAF00D4C236 /* macOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FE9D299A4EAF00D4C236 /* macOS.xcconfig */; };
+		9591FEBD299A4EAF00D4C236 /* tvOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FE9E299A4EAF00D4C236 /* tvOS.xcconfig */; };
+		9591FEBE299A4EAF00D4C236 /* iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FE9F299A4EAF00D4C236 /* iOS.xcconfig */; };
+		9591FEBF299A4EAF00D4C236 /* watchOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA0299A4EAF00D4C236 /* watchOS.xcconfig */; };
+		9591FEC0299A4EAF00D4C236 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA2299A4EAF00D4C236 /* Application.xcconfig */; };
+		9591FEC1299A4EAF00D4C236 /* DynamicFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA3299A4EAF00D4C236 /* DynamicFramework.xcconfig */; };
+		9591FEC2299A4EAF00D4C236 /* StaticFramework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA4299A4EAF00D4C236 /* StaticFramework.xcconfig */; };
+		9591FEC3299A4EAF00D4C236 /* LogicTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA5299A4EAF00D4C236 /* LogicTests.xcconfig */; };
+		9591FEC4299A4EAF00D4C236 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA7299A4EAF00D4C236 /* Debug.xcconfig */; };
+		9591FEC5299A4EAF00D4C236 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA8299A4EAF00D4C236 /* Release.xcconfig */; };
+		9591FEC6299A4EAF00D4C236 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9591FEA9299A4EAF00D4C236 /* Warnings.xcconfig */; };
 		95E91676299526B200EFDB34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094AE9011E25AF3A00F408BC /* Foundation.framework */; };
 		95E91677299526B200EFDB34 /* Foundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 094AE9011E25AF3A00F408BC /* Foundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95E91678299526B300EFDB34 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D80FDF1E26C04800AC7A2D /* AudioToolbox.framework */; };
@@ -272,6 +285,19 @@
 		708836942561F55B005B32F0 /* ParseLiveQuery_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseLiveQuery_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		708836962561F55B005B32F0 /* ParseLiveQuery_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseLiveQuery_tvOS.h; sourceTree = "<group>"; };
 		708836972561F55B005B32F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9591FE99299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "ParseLiveQuery-iOS.xcconfig"; sourceTree = "<group>"; };
+		9591FE9B299A4EAF00D4C236 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		9591FE9D299A4EAF00D4C236 /* macOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = macOS.xcconfig; sourceTree = "<group>"; };
+		9591FE9E299A4EAF00D4C236 /* tvOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
+		9591FE9F299A4EAF00D4C236 /* iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		9591FEA0299A4EAF00D4C236 /* watchOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		9591FEA2299A4EAF00D4C236 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		9591FEA3299A4EAF00D4C236 /* DynamicFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DynamicFramework.xcconfig; sourceTree = "<group>"; };
+		9591FEA4299A4EAF00D4C236 /* StaticFramework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticFramework.xcconfig; sourceTree = "<group>"; };
+		9591FEA5299A4EAF00D4C236 /* LogicTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = LogicTests.xcconfig; sourceTree = "<group>"; };
+		9591FEA7299A4EAF00D4C236 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9591FEA8299A4EAF00D4C236 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9591FEA9299A4EAF00D4C236 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		95E916532995216A00EFDB34 /* Parse.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Parse.xcodeproj; path = ../Parse/Parse.xcodeproj; sourceTree = "<group>"; };
 		95E9167E299526F200EFDB34 /* BoltsSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoltsSwift.xcodeproj; path = "../Carthage/Checkouts/Bolts-Swift/BoltsSwift.xcodeproj"; sourceTree = "<group>"; };
 		95E9169F2995270900EFDB34 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../Carthage/Checkouts/Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
@@ -376,6 +402,58 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		9591FE98299A4EAF00D4C236 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9591FE99299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig */,
+				9591FE9A299A4EAF00D4C236 /* Shared */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9591FE9A299A4EAF00D4C236 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9591FE9B299A4EAF00D4C236 /* Common.xcconfig */,
+				9591FE9C299A4EAF00D4C236 /* Platform */,
+				9591FEA1299A4EAF00D4C236 /* Product */,
+				9591FEA6299A4EAF00D4C236 /* Project */,
+				9591FEA9299A4EAF00D4C236 /* Warnings.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9591FE9C299A4EAF00D4C236 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				9591FE9D299A4EAF00D4C236 /* macOS.xcconfig */,
+				9591FE9E299A4EAF00D4C236 /* tvOS.xcconfig */,
+				9591FE9F299A4EAF00D4C236 /* iOS.xcconfig */,
+				9591FEA0299A4EAF00D4C236 /* watchOS.xcconfig */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		9591FEA1299A4EAF00D4C236 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				9591FEA2299A4EAF00D4C236 /* Application.xcconfig */,
+				9591FEA3299A4EAF00D4C236 /* DynamicFramework.xcconfig */,
+				9591FEA4299A4EAF00D4C236 /* StaticFramework.xcconfig */,
+				9591FEA5299A4EAF00D4C236 /* LogicTests.xcconfig */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		9591FEA6299A4EAF00D4C236 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				9591FEA7299A4EAF00D4C236 /* Debug.xcconfig */,
+				9591FEA8299A4EAF00D4C236 /* Release.xcconfig */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
 		95E916542995216A00EFDB34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +497,7 @@
 		F5256FC41BD71F9A0052FB8A = {
 			isa = PBXGroup;
 			children = (
+				9591FE98299A4EAF00D4C236 /* Configurations */,
 				F5256FD01BD71F9A0052FB8A /* ParseLiveQuery */,
 				708836732561F503005B32F0 /* ParseLiveQuery-watchOS */,
 				708836952561F55B005B32F0 /* ParseLiveQuery-tvOS */,
@@ -804,6 +883,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9591FEC0299A4EAF00D4C236 /* Application.xcconfig in Resources */,
+				9591FEBF299A4EAF00D4C236 /* watchOS.xcconfig in Resources */,
+				9591FEBD299A4EAF00D4C236 /* tvOS.xcconfig in Resources */,
+				9591FEC3299A4EAF00D4C236 /* LogicTests.xcconfig in Resources */,
+				9591FEC1299A4EAF00D4C236 /* DynamicFramework.xcconfig in Resources */,
+				9591FEBA299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig in Resources */,
+				9591FEC6299A4EAF00D4C236 /* Warnings.xcconfig in Resources */,
+				9591FEBB299A4EAF00D4C236 /* Common.xcconfig in Resources */,
+				9591FEC4299A4EAF00D4C236 /* Debug.xcconfig in Resources */,
+				9591FEC5299A4EAF00D4C236 /* Release.xcconfig in Resources */,
+				9591FEC2299A4EAF00D4C236 /* StaticFramework.xcconfig in Resources */,
+				9591FEBC299A4EAF00D4C236 /* macOS.xcconfig in Resources */,
+				9591FEBE299A4EAF00D4C236 /* iOS.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,6 +1174,7 @@
 		};
 		F5256FE01BD71F9A0052FB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9591FEA7299A4EAF00D4C236 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1120,6 +1213,7 @@
 		};
 		F5256FE11BD71F9A0052FB8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9591FEA8299A4EAF00D4C236 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1237,6 +1331,7 @@
 		};
 		F5A9BFC91BE0248D00E78326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9591FE99299A4EAF00D4C236 /* ParseLiveQuery-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
