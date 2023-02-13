@@ -13,4 +13,4 @@
 PRODUCT_NAME = ParseLiveQuery
 PRODUCT_BUNDLE_IDENTIFIER = com.parse.livequery.ios
 
-INFOPLIST_FILE = $(SRCROOT)/Resources/Info.plist
+INFOPLIST_FILE = $(SRCROOT)/ParseLiveQuery/Resources/Info.plist
