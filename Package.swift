@@ -22,7 +22,6 @@ let package = Package(
     targets: [
  	.target(name: "ParseLiveQuery",
                dependencies: [
-		"ParseCore",
 		"Starscream",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
                 .product(name: "Bolts", package: "Bolts-ObjC")
