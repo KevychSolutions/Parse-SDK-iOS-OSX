@@ -20,20 +20,12 @@ let package = Package(
         .package(url: "https://github.com/facebook/facebook-ios-sdk.git", from: "15.1.0")
     ],
     targets: [
-        .target(
-            name: "ParseCore",
-            dependencies: [.product(name: "Bolts", package: "Bolts-ObjC")],
-            path: "Parse/Parse",
-            exclude: ["Resources/Parse-tvOS.Info.plist", "Resources/Parse-iOS.Info.plist", "Resources/Parse-OSX.Info.plist", "Resources/Parse-watchOS.Info.plist"],
-            resources: [.process("Resources")],
-            publicHeadersPath: "Source",
-            cSettings: [.headerSearchPath("Internal/**")]),
  	.target(name: "ParseLiveQuery",
                dependencies: [
+		"ParseCore",
 		"Starscream",
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
                 .product(name: "Bolts", package: "Bolts-ObjC")
-
                ],
 		exclude: ["Resources/Info.plist"],
                 path: "ParseLiveQuery/ParseLiveQuery")
