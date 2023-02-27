@@ -8,9 +8,10 @@
  */
 
 import Foundation
-import Parse
 import BoltsSwift
 import Starscream
+import Parse
+
 
 /**
  This is the 'advanced' view of live query subscriptions. It allows you to customize your subscriptions
