@@ -88,6 +88,6 @@ let package = Package(
 		"ParseCore"
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
-                resources: [.process("Resources")]
+                resources: [.process("Resources")])
     ]
 )
