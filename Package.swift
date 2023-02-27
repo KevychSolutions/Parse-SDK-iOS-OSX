@@ -11,6 +11,10 @@ let package = Package(
                 .watchOS(.v2)],
     products: [
         .library(name: "ParseObjC", targets: ["ParseCore"]),
+        .library(name: "ParseFacebookUtilsiOS", targets: ["ParseFacebookUtilsiOS"]),
+        .library(name: "ParseFacebookUtilsTvOS", targets: ["ParseFacebookUtilsTvOS"]),
+        .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"]),
+        .library(name: "ParseUI", targets: ["ParseUI"]),
         .library(name: "ParseLiveQuery", targets: ["ParseLiveQuery"])
     ],
     dependencies: [
@@ -26,7 +30,50 @@ let package = Package(
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
                 .product(name: "Bolts", package: "Bolts-ObjC")
                ],
-		exclude: ["Resources/Info.plist"],
-                path: "ParseLiveQuery/ParseLiveQuery")
+                path: "ParseFacebookUtilsiOS/ParseFacebookUtilsiOS",
+                exclude: ["exclude", "Resources/Info-iOS.plist"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
+        .target(name: "ParseFacebookUtilsTvOS",
+               dependencies: [
+                "ParseFacebookUtils",
+                .product(name: "FacebookTV", package: "facebook-ios-sdk", condition: .when(platforms: [.tvOS]))
+               ],
+                path: "ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS",
+                exclude: ["exclude", "Resources/Info-tvOS.plist"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
+        .target(name: "ParseTwitterUtils",
+               dependencies: [
+                "ParseCore"
+               ],
+                path: "ParseTwitterUtils/ParseTwitterUtils",
+                exclude: ["Resources/Info-iOS.plist"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
+        .target(name: "ParseUI",
+               dependencies: [
+                "ParseFacebookUtilsiOS",
+                "ParseTwitterUtils"
+               ],
+                path: "ParseUI/ParseUI",
+                exclude: ["Resources/Info-iOS.plist"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
+ 	.target(name: "ParseLiveQuery",
+               dependencies: [
+                .product(name: "BoltsSwift", package: "Bolts-Swift"),
+		"Starscream",
+		"ParseCore"
+               ],
+                path: "ParseLiveQuery/ParseLiveQuery",
+                exclude: ["Resources/Info.plist", "ParseLiveQuery-watchOS/Info.plist", "ParseLiveQuery-tvOS/Info.plist"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
     ]
 )
