@@ -10,7 +10,7 @@ let package = Package(
                 .tvOS(.v12),
                 .watchOS(.v2)],
     products: [
-        .library(name: "ParseObjC", targets: ["ParseCore"]),
+        .library(name: "ParseObjC", targets: ["Parse"]),
         .library(name: "ParseFacebookUtilsiOS", targets: ["ParseFacebookUtilsiOS"]),
         .library(name: "ParseFacebookUtilsTvOS", targets: ["ParseFacebookUtilsTvOS"]),
         .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"]),
@@ -25,7 +25,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ParseCore",
+            name: "Parse",
             dependencies: [.product(name: "Bolts", package: "Bolts-ObjC")],
             path: "Parse/Parse",
             exclude: ["Resources/Parse-tvOS.Info.plist", "Resources/Parse-iOS.Info.plist", "Resources/Parse-OSX.Info.plist", "Resources/Parse-watchOS.Info.plist"],
@@ -35,7 +35,7 @@ let package = Package(
         .target(
             name: "ParseFacebookUtils",
             dependencies: [
-                "ParseCore",
+                "Parse",
                 .product(name: "Bolts", package: "Bolts-ObjC"),
                 .product(name: "FacebookCore", package: "facebook-ios-sdk", condition: .when(platforms: [.iOS, .tvOS])),
                 .product(name: "FacebookLogin", package: "facebook-ios-sdk", condition: .when(platforms: [.iOS, .tvOS]))],
@@ -64,7 +64,7 @@ let package = Package(
                 cSettings: [.headerSearchPath("Internal/**")]),
         .target(name: "ParseTwitterUtils",
                dependencies: [
-                "ParseCore"
+                "Parse"
                ],
                 path: "ParseTwitterUtils/ParseTwitterUtils",
                 exclude: ["Resources/Info-iOS.plist"],
@@ -85,7 +85,7 @@ let package = Package(
                dependencies: [
                 .product(name: "BoltsSwift", package: "Bolts-Swift"),
 		"Starscream",
-		"ParseCore"
+		"Parse"
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
                 resources: [.process("Resources")])
