@@ -88,9 +88,6 @@ let package = Package(
 		"ParseCore"
                ],
                 path: "ParseLiveQuery/ParseLiveQuery",
-                exclude: ["Resources/Info.plist", "ParseLiveQuery-watchOS/Info.plist", "ParseLiveQuery-tvOS/Info.plist"],
-                resources: [.process("Resources")],
-                publicHeadersPath: "Source",
-                cSettings: [.headerSearchPath("Internal/**")]),
+                resources: [.process("Resources")]
     ]
 )
