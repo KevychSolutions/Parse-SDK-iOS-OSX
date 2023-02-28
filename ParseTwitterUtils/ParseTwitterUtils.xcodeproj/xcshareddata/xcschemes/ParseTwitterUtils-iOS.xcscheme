@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-               BuildableName = "ParseTwitterUtils.framework"
+               BuildableName = ".framework"
                BlueprintName = "ParseTwitterUtils-iOS"
                ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81CB98C51AB7905D00136FA5"
-               BuildableName = "ParseTwitterUtils-Tests.xctest"
+               BuildableName = ".xctest"
                BlueprintName = "ParseTwitterUtils-Tests"
                ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
             </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-            BuildableName = "ParseTwitterUtils.framework"
+            BuildableName = ".framework"
             BlueprintName = "ParseTwitterUtils-iOS"
             ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "81CB98C51AB7905D00136FA5"
-               BuildableName = "ParseTwitterUtils-Tests.xctest"
+               BuildableName = ".xctest"
                BlueprintName = "ParseTwitterUtils-Tests"
                ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
             </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-            BuildableName = "ParseTwitterUtils.framework"
+            BuildableName = ".framework"
             BlueprintName = "ParseTwitterUtils-iOS"
             ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
          </BuildableReference>
@@ -108,7 +108,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC07D0554694100DB518D"
-            BuildableName = "ParseTwitterUtils.framework"
+            BuildableName = ".framework"
             BlueprintName = "ParseTwitterUtils-iOS"
             ReferencedContainer = "container:ParseTwitterUtils.xcodeproj">
          </BuildableReference>
