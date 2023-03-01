@@ -35,6 +35,8 @@ module Constants
     File.join(script_folder, 'ParseTwitterUtils', 'ParseTwitterUtils', 'Resources', 'Info-iOS.plist'),
     File.join(script_folder, 'ParseUI', 'ParseUI', 'Resources', 'Info-iOS.plist'),
     File.join(script_folder, 'ParseLiveQuery', 'ParseLiveQuery', 'Resources', 'Info.plist'),
+    File.join(script_folder, 'ParseLiveQuery', 'ParseLiveQuery-tvOS', 'Info.plist'),
+    File.join(script_folder, 'ParseLiveQuery', 'ParseLiveQuery-watchOS', 'Info.plist'),
     File.join(script_folder, 'ParseStarterProject', 'iOS', 'ParseStarterProject', 'Resources', 'Info.plist'),
     File.join(script_folder, 'ParseStarterProject', 'iOS', 'ParseStarterProject-Swift', 'Resources', 'Info.plist'),
     File.join(script_folder, 'ParseStarterProject', 'OSX', 'ParseOSXStarterProject', 'Resources', 'Info.plist'),
@@ -59,9 +61,7 @@ module Constants
     constants_file.seek(0)
     constants_file.write(constants)
 
-    PLISTS.each do |plist|
-      update_info_plist_version(plist, version)
-    end
+    
   end
 
   def self.update_info_plist_version(plist_path, version)
@@ -294,10 +294,44 @@ namespace :build do
         exit(1)
       end
     end
+    
+    desc 'Build tvOS ParseLiveQuery framework.'
+    task :tvos do
+      task = XCTask::BuildFrameworkTask.new do |t|
+        t.directory = script_folder
+        t.build_directory = build_folder
+        t.framework_type = XCTask::FrameworkType::TVOS
+        t.framework_name = 'ParseLiveQuery.framework'
+        
+        t.workspace = 'Parse.xcworkspace'
+        t.scheme = 'ParseLiveQuery-tvOS'
+        t.configuration = 'Release'
+      end
+      result = task.execute
+      unless result
+        puts 'Failed to build tvOS FacebookUtils Framework.'
+        exit(1)
+      end
+    end
+      
+    desc 'Build watchOS ParseLiveQuery framework.'
+    task :watchos do
+      task = XCTask::BuildFrameworkTask.new do |t|
+        t.directory = script_folder
+        t.build_directory = File.join(build_folder, 'watchOS')
+        t.framework_type = XCTask::FrameworkType::WATCHOS
+        t.framework_name = 'ParseLiveQuery.framework'
+        t.workspace = 'Parse.xcworkspace'
+        t.scheme = 'ParseLiveQuery-watchOS'
+        t.configuration = 'Release'
+      end
+      result = task.execute
+      unless result
+        puts 'Failed to build tvOS FacebookUtils Framework.'
+        exit(1)
+      end
+    end
   end
-
-
-
 end
 
 namespace :package do
@@ -310,7 +344,6 @@ namespace :package do
   package_starter_tvos_name = 'ParseStarterProject-tvOS.zip'
   package_starter_watchos_name = 'ParseStarterProject-watchOS.zip'
   package_parseui_name = 'ParseUI.zip'
-  package_parse_live_query_name = 'ParseLiveQuery.zip'
 
   task :prepare do
     `rm -rf #{build_folder} && mkdir -p #{build_folder}`
@@ -386,6 +419,14 @@ namespace :package do
     Rake::Task['build:parse_live_query:ios'].invoke
     parse_live_query_framework_path = File.join(build_folder, 'iOS', 'ParseLiveQuery.framework')
     make_package(release_folder, [parse_live_query_framework_path], 'ParseLiveQuery-iOS.zip')
+    
+    Rake::Task['build:parse_live_query:tvos'].invoke
+    tvos_parse_live_query_framework_path = File.join(build_folder, 'tvOS', 'ParseLiveQuery.framework')
+    make_package(release_folder, [tvos_parse_live_query_framework_path], 'ParseLiveQuery-tvOS.zip')
+    
+    Rake::Task['build:parse_live_query:watchos'].invoke
+    watchos_parse_live_query_framework_path = File.join(build_folder, 'watchOS', 'ParseLiveQuery.framework')
+    make_package(release_folder, [watchos_parse_live_query_framework_path], 'ParseLiveQuery-watchOS.zip')
     
   end
 
@@ -652,32 +693,6 @@ namespace :test do
       end
     end
   end
-  
-  namespace :parse_live_query do
-    task :ios do
-      task = XCTask::BuildTask.new do |t|
-        t.directory = script_folder
-        t.workspace = 'Parse.xcworkspace'
-
-        t.scheme = 'ParseLiveQuery-iOS'
-        t.sdk = 'iphonesimulator'
-        t.destinations = [ios_simulator]
-        t.configuration = 'Debug'
-
-        t.actions = [XCTask::BuildAction::BUILD]
-        t.formatter = XCTask::BuildFormatter::XCPRETTY
-      end
-
-      result = task.execute
-      unless result
-        puts 'Failed to build ParseLiveQuery'
-        exit(1)
-      end
-    end
-  end
-  
-   
-   
 
   desc 'Run Starter Project Tests'
   task :starters do |_|

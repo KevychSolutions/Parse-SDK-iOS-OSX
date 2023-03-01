@@ -1,9 +1,7 @@
 name: ci
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ '**' ]
+    push:
+        branches: [ master, release, alpha, beta ]
 env:
   CI_XCODE_11: '/Applications/Xcode_11.7.app/Contents/Developer'
   CI_XCODE_13: '/Applications/Xcode_13.4.1.app/Contents/Developer'
@@ -180,7 +178,7 @@ jobs:
         bundle config set path 'vendor/bundle'
         bundle install
     - name: Build-Test
-      run: set -o pipefail && env NSUnbufferedIO=YES bundle exec rake test:parse_live_query:ios
+      run: set -o pipefail && env NSUnbufferedIO=YES bundle exec rake test:parse_live_query:all
       env:
         DEVELOPER_DIR: ${{ env.CI_XCODE_13 }}
     - name: Send codecov
