@@ -734,8 +734,7 @@ namespace :test do
         t.scheme = 'ParseLiveQuery-tvOS'
         t.destinations = [tvos_simulator]
         t.configuration = 'Debug'
-        t.additional_options = { "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS" => "YES",
-                                 "GCC_GENERATE_TEST_COVERAGE_FILES" => "YES" }
+        
 
         t.actions = [XCTask::BuildAction::CLEAN, XCTask::BuildAction::BUILD]
         t.formatter = XCTask::BuildFormatter::XCPRETTY
@@ -756,8 +755,7 @@ namespace :test do
         t.scheme = 'ParseLiveQuery-watchOS'
         t.destinations = [watchos_simulator]
         t.configuration = 'Debug'
-        t.additional_options = { "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS" => "YES",
-                                 "GCC_GENERATE_TEST_COVERAGE_FILES" => "YES" }
+        
 
         t.actions = [XCTask::BuildAction::CLEAN, XCTask::BuildAction::BUILD]
         t.formatter = XCTask::BuildFormatter::XCPRETTY
@@ -777,8 +775,7 @@ namespace :test do
 
         t.scheme = 'ParseLiveQuery-OSX'
         t.configuration = 'Debug'
-        t.additional_options = { "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS" => "YES",
-                                 "GCC_GENERATE_TEST_COVERAGE_FILES" => "YES" }
+    
 
         t.actions = [XCTask::BuildAction::CLEAN, XCTask::BuildAction::BUILD]
         t.formatter = XCTask::BuildFormatter::XCPRETTY
