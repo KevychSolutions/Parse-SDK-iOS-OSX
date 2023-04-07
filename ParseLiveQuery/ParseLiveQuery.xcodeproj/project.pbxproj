@@ -399,12 +399,12 @@
 			path = "ParseLiveQuery-tvOS";
 			sourceTree = "<group>";
 		};
-		81464FC51CA31DA0000235E7 /* Resources */ = {
+		84FFD39A29E04BD200EA5AF9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				F5256FD31BD71F9A0052FB8A /* Info.plist */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		95DDB92C29AE4C0E00CF4AA1 /* Configurations */ = {
@@ -527,6 +527,7 @@
 		F5256FD01BD71F9A0052FB8A /* ParseLiveQuery */ = {
 			isa = PBXGroup;
 			children = (
+				84FFD39A29E04BD200EA5AF9 /* Resources */,
 				F5DC9D381BD9BAFC00E8FF07 /* Internal */,
 				F5591BA31BD720E10072F966 /* Client.swift */,
 				F534A5B11BDAFE0200CBD11A /* Subscription.swift */,
@@ -534,7 +535,6 @@
 				F59CA92E1C8E496200329737 /* Errors.swift */,
 				0632EDD31CA1A6DB00DD3CB8 /* Parse+LiveQuery.swift */,
 				F5A88F491C9B6EBA002F0E0D /* PFQuery+Subscribe.swift */,
-				81464FC51CA31DA0000235E7 /* Resources */,
 			);
 			path = ParseLiveQuery;
 			sourceTree = "<group>";
